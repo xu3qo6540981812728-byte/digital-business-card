@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>載入中...</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        @keyframes animated-gradient{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}@keyframes fadeInUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}:root{--primary-text-color:#ffffff;--secondary-text-color:#e0e0e0;--card-bg-color:rgba(255, 255, 255, 0.15);--card-border-color:rgba(255, 255, 255, 0.2);--button-bg-color:rgba(255, 255, 255, 0.85);--button-text-color:#1a237e;--section-divider-color:rgba(255, 255, 255, 0.8)}body,html{margin:0;padding:0;font-family:'Noto Sans TC',sans-serif;display:flex;justify-content:center;align-items:flex-start;min-height:100vh;padding:50px 15px;box-sizing:border-box;background:linear-gradient(135deg,#a8c0ff,#3f2b96,#4facfe,#00f2fe);background-size:400% 400%;animation:animated-gradient 15s ease infinite}.main-container{width:100%;max-width:680px;text-align:center}.card{background-color:var(--card-bg-color);backdrop-filter:blur(15px);border-radius:24px;box-shadow:0 8px 32px 0 rgba(0,0,0,.3);padding:30px;border:1px solid var(--card-border-color);margin-bottom:30px;opacity:0;animation:fadeInUp .8s ease-out forwards}.card.animate-delay-1{animation-delay:.2s}.card.animate-delay-2{animation-delay:.4s}.card.animate-delay-3{animation-delay:.6s}.card.animate-delay-4{animation-delay:.8s}.card.animate-delay-5{animation-delay:1s}.card.animate-delay-6{animation-delay:1.2s}.card.animate-delay-7{animation-delay:1.4s}.card.animate-delay-8{animation-delay:1.6s}.card.animate-delay-9{animation-delay:1.8s}.card.animate-delay-10{animation-delay:2s}.profile-card{padding-top:40px}.avatar{width:150px;height:150px;border-radius:50%;border:6px solid #fff;object-fit:cover;margin-bottom:15px;box-shadow:0 4px 20px rgba(0,0,0,.25)}h1{font-size:2.2em;color:var(--primary-text-color);margin:15px 0 5px 0;text-shadow:1px 1px 5px rgba(0,0,0,.3)}.nickname{font-size:1.6em;color:var(--primary-text-color);font-weight:700}.title{font-size:1.1em;color:var(--secondary-text-color);margin:0 0 20px 0;white-space:pre-wrap;line-height:1.6;text-shadow:1px 1px 3px rgba(0,0,0,.3)}.social-links{margin:25px 0;display:flex;justify-content:center;gap:18px}.social-links a{display:flex;justify-content:center;align-items:center;width:44px;height:44px;background-color:rgba(255,255,255,.2);border-radius:50%;transition:transform .3s ease,background-color .3s ease}.social-links a:hover{transform:translateY(-5px) scale(1.1);background-color:rgba(255,255,255,.4)}.social-links svg{width:24px;height:24px;fill:var(--primary-text-color)}.tags-container{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin:20px 0}.tag{background-color:rgba(0,62,107,.7);color:#fff;padding:6px 14px;border-radius:16px;font-size:.9em;font-weight:500}.section-title{font-size:1.5em;color:var(--primary-text-color);margin:15px 0 25px 0;text-shadow:1px 1px 5px rgba(0,0,0,.3);position:relative;display:inline-block}.section-title::after{content:'';position:absolute;bottom:-8px;left:50%;transform:translateX(-50%);width:60%;height:3px;background-color:var(--section-divider-color);border-radius:2px}.link-button{display:block;background-color:var(--button-bg-color);color:var(--button-text-color);padding:16px 20px;margin:15px auto;border-radius:12px;text-decoration:none;font-weight:700;font-size:1em;border:none;box-shadow:0 4px 15px rgba(0,0,0,.1);transition:transform .3s ease,box-shadow .3s ease,background-color .3s ease;max-width:95%}.link-button:hover{transform:translateY(-4px);box-shadow:0 8px 25px rgba(0,0,0,.2);background-color:#fff}.icon-link{display:flex;align-items:center;justify-content:center;gap:10px}.icon-link svg{width:22px;height:22px;fill:var(--button-text-color)}.photo-grid{display:grid;gap:10px;margin-top:15px}.photo-grid img{width:100%;height:100%;object-fit:cover;border-radius:12px;display:block}.grid-layout-1{grid-template-columns:2fr 1fr;grid-template-rows:repeat(3,1fr);max-height:400px}.grid-layout-1 .large-photo{grid-row:1 / 4;grid-column:1 / 2}.grid-layout-2{grid-template-columns:1.5fr 1fr;grid-template-rows:repeat(4,1fr);max-height:450px}.grid-layout-2 .large-photo{grid-row:1 / 5;grid-column:1 / 2}.grid-layout-2 .small-photos{grid-row:1 / 5;grid-column:2 / 3;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:10px}.video-container{position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:16px;margin-bottom:15px}.video-container iframe{position:absolute;top:0;left:0;width:100%;height:100%}.video-title{color:var(--secondary-text-color);font-weight:700;margin-top:10px}.map-container{width:100%;height:350px;border-radius:16px;overflow:hidden;border:2px solid var(--card-border-color)}.team-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}.team-card{text-decoration:none}.team-card img{width:100%;border-radius:16px;transition:transform .3s ease}.team-card:hover img{transform:scale(1.05)}footer{margin-top:30px;font-size:.9em;color:rgba(255,255,255,.7)}footer a{color:var(--primary-text-color);text-decoration:none;font-weight:700}
+    </style>
+</head>
+<body>
+
+    <div id="main-container" class="main-container">
+        <!-- 內容將由 JavaScript 動態生成 -->
+    </div>
+
+    <!-- 引入設定檔 -->
+    <script src="config.js"></script>
+    
+    <!-- 主要的渲染腳本 -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // SVG 圖示庫
+            const icons = {
+                facebook: '<svg viewBox="0 0 24 24"><path d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.32 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96C18.34 21.21 22 17.06 22 12.06C22 6.53 17.5 2.04 12 2.04Z"/></svg>',
+                line: '<svg viewBox="0 0 24 24"><path d="M21.3,6.3c0.2,0.5,0.3,1,0.3,1.6c0,2.1-0.8,4.1-2.2,5.6c-1.5,1.5-3.5,2.3-5.6,2.3c-0.5,0-1.1-0.1-1.6-0.2l-3.3,1l-1-1l1-3.3c-2.1-1.8-3-4.5-2.5-7.2C6.8,4.5,9.5,2.7,12.7,2.7C15.9,2.7,19.5,4.2,21.3,6.3z M11.2,12.1h-1c-0.2,0-0.4-0.2-0.4-0.4V8.4c0-0.2,0.2-0.4,0.4-0.4h1c0.2,0,0.4,0.2,0.4,0.4v3.3C11.6,11.9,11.4,12.1,11.2,12.1z M14.9,12.1h-1c-0.2,0-0.4-0.2-0.4-0.4V8.4c0-0.2,0.2-0.4,0.4-0.4h1c0.2,0,0.4,0.2,0.4,0.4v3.3C15.3,11.9,15.1,12.1,14.9,12.1z M8.1,10.6c-0.2,0-0.4-0.2-0.4-0.4V8.4c0-0.2,0.2-0.4,0.4-0.4h1c0.2,0,0.4,0.2,0.4,0.4v1.8C9.1,10.4,8.9,10.6,8.5,10.6C8.4,10.6,8.2,10.6,8.1,10.6z M17.6,10.2c0,0.2-0.2,0.4-0.4,0.4h-1.8c-0.2,0-0.4-0.2-0.4-0.4V8.4c0-0.2,0.2-0.4,0.4-0.4h1.8c0.2,0,0.4,0.2,0.4,0.4V10.2z"/></svg>',
+                blog: '<svg viewBox="0 0 24 24"><path d="M3.5,4h17C21.3,4,22,4.7,22,5.5v13c0,0.8-0.7,1.5-1.5,1.5h-17C2.7,20,2,19.3,2,18.5v-13C2,4.7,2.7,4,3.5,4z M6,7v1.5h12V7H6z M6,11v1.5h12V11H6z M6,15v1.5h8V15H6z"/></svg>',
+                threads: '<svg viewBox="0 0 24 24"><path d="M14.1,10.3c0.2-1.3-0.5-2.6-1.6-3.4c-1.4-1-3.2-1-4.6-0.1C6.4,7.7,5.8,9.3,6.2,10.9c0.3,1.3,1.4,2.4,2.7,2.7c0.5,0.1,1,0.1,1.5,0.1h0.2c0,0,0,0,0,0c0.3,0,0.5-0.1,0.8-0.2c0.2-0.1,0.5-0.2,0.7-0.4c0.1-0.1,0.2-0.1,0.2-0.2c0.1-0.1,0.1-0.2,0.2-0.3c0-0.1,0.1-0.2,0.1-0.3c0-0.1,0-0.2,0-0.3c0-0.1,0-0.2,0-0.3c0-0.1,0-0.1,0-0.2c0-0.1-0.1-0.2-0.1-0.3c-0.1-0.2-0.2-0.4-0.4-0.6c-0.2-0.2-0.5-0.3-0.8-0.3c-0.7-0.1-1.3,0.4-1.4,1c-0.1,0.7,0.4,1.3,1,1.4c0.1,0,0.2,0,0.3,0h0.1c0.2,0,0.3-0.1,0.5-0.2c0.2-0.2,0.3-0.5,0.2-0.7c-0.1-0.3-0.4-0.5-0.7-0.4c-0.3,0.1-0.5,0.4-0.4,0.7c0,0.2,0.2,0.4,0.4,0.5c0.2,0,0.5-0.1,0.6-0.3c0.1-0.2,0.1-0.5-0.1-0.6c-0.2-0.2-0.5-0.2-0.7-0.1c-0.2,0.1-0.4,0.3-0.3,0.6c0.1,0.2,0.3,0.4,0.6,0.3c0.2-0.1,0.4-0.3,0.3-0.5c-0.1-0.2-0.3-0.3-0.5-0.3c-0.2,0-0.4,0.1-0.5,0.3c-0.1,0.2-0.1,0.4,0.1,0.6c0.1,0.1,0.3,0.2,0.5,0.2c0.2,0,0.3-0.1,0.5-0.2c0.3-0.2,0.6-0.6,0.5-1c-0.1-0.6-0.7-1-1.3-1c-0.6,0-1.1,0.4-1.3,0.9c-0.2,0.7,0.1,1.4,0.7,1.7c0.3,0.2,0.7,0.2,1,0.1c0.7-0.2,1.2-0.7,1.4-1.3c0.2-0.7-0.1-1.4-0.7-1.8c-0.6-0.4-1.3-0.3-1.8,0.2c-0.5,0.5-0.7,1.2-0.5,1.8c0.2,0.7,0.8,1.2,1.5,1.2c0.7,0,1.4-0.5,1.6-1.2C14.2,11.6,14.4,10.9,14.1,10.3z M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10S17.5,2,12,2z"/></svg>',
+                linkedin: '<svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4s1.39.63 1.39 1.4v4.93h2.8zM6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68zm1.39 9.94V10.12H5.5v8.38h2.77z"/></svg>'
+            };
+
+            const mainContainer = document.getElementById('main-container');
+            if (!config) {
+                mainContainer.innerHTML = '<h1>錯誤：找不到 config.js 設定檔</h1>';
+                return;
+            }
+
+            // 設定網頁標題
+            document.title = config.profile.name ? `${config.profile.name} | ${config.profile.nickname}` : '電子名片';
+
+            // 渲染函式
+            const renderProfile = (profile) => {
+                const tagsHTML = profile.tags.map(tag => `<span class="tag">${tag}</span>`).join('');
+                const socialLinksHTML = profile.socialLinks.map(link => `
+                    <a href="${link.url}" target="_blank" title="${link.icon}">${icons[link.icon] || ''}</a>
+                `).join('');
+
+                return `
+                    <div class="card profile-card animate-delay-1">
+                        <img src="${profile.avatarURL}" alt="個人頭像" class="avatar">
+                        <h2 class="nickname">${profile.nickname}</h2>
+                        <div class="tags-container">${tagsHTML}</div>
+                        <h1>${profile.name}</h1>
+                        <p class="title">${profile.description}</p>
+                        <div class="social-links">${socialLinksHTML}</div>
+                    </div>
+                `;
+            };
+
+            const renderSection = (section, index) => {
+                let contentHTML = `<div class="card animate-delay-${index + 2}">`;
+                if(section.title) contentHTML += `<h2 class="section-title">${section.title}</h2>`;
+                if(section.subtitle) contentHTML += `<h3 class="title">${section.subtitle}</h3>`;
+
+                switch (section.type) {
+                    case 'links':
+                    case 'awards':
+                        const itemsHTML = section.items.map(item => `
+                            <a href="${item.url}" class="link-button ${item.icon ? 'icon-link' : ''}" target="_blank">
+                                ${item.icon && icons[item.icon] ? icons[item.icon] : ''}
+                                ${item.text}
+                            </a>`).join('');
+                        contentHTML += `<div>${itemsHTML}</div>`;
+                        break;
+                    
+                    case 'gallery':
+                        let imagesHTML = '';
+                        if (section.layout === 'grid-layout-1' && section.images.length >= 4) {
+                            imagesHTML = `
+                                <div class="photo-grid grid-layout-1">
+                                    <div class="large-photo"><img src="${section.images[0]}" alt="${section.title} photo 1"></div>
+                                    <img src="${section.images[1]}" alt="${section.title} photo 2">
+                                    <img src="${section.images[2]}" alt="${section.title} photo 3">
+                                    <img src="${section.images[3]}" alt="${section.title} photo 4">
+                                </div>`;
+                        } else if (section.layout === 'grid-layout-2' && section.images.length >= 5) {
+                             imagesHTML = `
+                                <div class="photo-grid grid-layout-2">
+                                    <div class="large-photo"><img src="${section.images[0]}" alt="${section.title} photo 1"></div>
+                                    <div class="small-photos">
+                                        <img src="${section.images[1]}" alt="${section.title} photo 2">
+                                        <img src="${section.images[2]}" alt="${section.title} photo 3">
+                                        <img src="${section.images[3]}" alt="${section.title} photo 4">
+                                        <img src="${section.images[4]}" alt="${section.title} photo 5">
+                                    </div>
+                                </div>`;
+                        }
+                        contentHTML += imagesHTML;
+                        if(section.mainLink) {
+                            contentHTML += `<a href="${section.mainLink.url}" class="link-button" target="_blank">${section.mainLink.text}</a>`;
+                        }
+                        break;
+
+                    case 'videos':
+                        const videosHTML = section.items.map(item => `
+                            <div>
+                                <div class="video-container">
+                                    <iframe src="https://www.youtube.com/embed/${item.videoId}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                <p class="video-title">${item.title}</p>
+                            </div>`).join('');
+                        contentHTML += videosHTML;
+                        break;
+
+                    case 'map':
+                        const mapURL = `https://www.google.com/maps/embed/v1/search?key=AIzaSyCot-5DFLkcex87t5SpQZ8V4dhHrmJFJxA&q=${encodeURIComponent(section.address)}&zoom=19`;
+                        contentHTML += `<div class="map-container"><iframe src="${mapURL}" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>`;
+                        if(section.joinUs) {
+                            contentHTML += `<div class="swiper-container" style="margin-top: 25px;"><img src="${section.joinUs.imageURL}" alt="加入我們" style="width: 100%; border-radius: 16px;"></div>`;
+                            contentHTML += `<a href="${section.joinUs.link.url}" class="link-button" target="_blank">${section.joinUs.link.text}</a>`;
+                        }
+                        break;
+                    
+                    case 'team':
+                        const membersHTML = section.members.map(member => `
+                            <a href="${member.url}" class="team-card" target="_blank">
+                                <img src="${member.imageURL}" alt="${member.name}">
+                            </a>`).join('');
+                        contentHTML += `<div class="team-grid">${membersHTML}</div>`;
+                        break;
+                }
+                contentHTML += '</div>';
+                return contentHTML;
+            };
+
+            // 建立頁面
+            let pageHTML = renderProfile(config.profile);
+            config.sections.forEach((section, index) => {
+                pageHTML += renderSection(section, index);
+            });
+
+            // 頁尾
+            pageHTML += `
+                <footer>
+                    <p>由 <a href="https://linkgoods.com" target="_blank">LINKGOODS</a> 概念啟發</p>
+                </footer>
+            `;
+
+            mainContainer.innerHTML = pageHTML;
+        });
+    </script>
+
+</body>
+</html>
