@@ -23,6 +23,19 @@
             background-clip: text;
             color: transparent;
         }
+        /* Watermark Style */
+        body::after {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 9999;
+            pointer-events: none;
+            background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300'><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' transform='rotate(-30 200 150)' style='font-size: 26px; font-family: &quot;Noto Sans TC&quot;, sans-serif; font-weight: 500; fill: rgba(0,0,0,0.05);'>桃園房仲專業顧問李培智</text></svg>");
+            background-repeat: repeat;
+        }
     </style>
 </head>
 <body class="bg-slate-100 text-slate-800">
@@ -178,9 +191,21 @@
 
         <!-- 頁腳 -->
         <footer class="text-center mt-8 md:mt-12">
-            <p class="text-sm text-slate-500">此懶人包內容由「桃園房仲專業顧問李培智」製作。</p>
+            <p class="text-sm text-slate-500">此懶人包由「桃園房仲專業顧問李培智」製作。</p>
             <a href="https://linkgoods.com/pagehouse" target="_blank" rel="noopener noreferrer" class="mt-4 inline-block bg-blue-600 text-white font-semibold py-2 px-5 rounded-lg hover:bg-blue-700 transition-colors duration-200">
-                聯繫桃園房仲專業顧問李培智
+                聯繫桃園房仲專業顧問培智
+            </a>
+
+            <!-- Separator with Text -->
+            <div class="relative flex py-5 items-center mt-6">
+                <div class="flex-grow border-t border-slate-300"></div>
+                <span class="flex-shrink mx-4 text-slate-500 font-semibold">{文章導讀}</span>
+                <div class="flex-grow border-t border-slate-300"></div>
+            </div>
+
+            <!-- New Article Button -->
+            <a href="https://vocus.cc/article/68ba33bbfd89780001ec43fc" target="_blank" rel="noopener noreferrer" class="mt-2 w-full max-w-md mx-auto inline-block bg-white text-teal-700 font-semibold py-3 px-5 rounded-lg border border-teal-600 hover:bg-teal-50 transition-colors duration-200 text-center shadow-sm">
+                房貸天條為新青安「解封」！房市大利多？一篇文看懂政府不敢說的3大真相
             </a>
         </footer>
 
